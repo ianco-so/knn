@@ -7,6 +7,10 @@
   <packaging>jar</packaging>
   <version>1.0</version>
   <name>knn</name>
+  <description>
+    Uma implementação do KNN em java, na sua forma Serial e Concorrente
+    para a diciplina de Programação Concorrente da UFRN (2024.1)
+  </description>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>

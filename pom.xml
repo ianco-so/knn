@@ -11,6 +11,9 @@
     Uma implementação do KNN em java, na sua forma Serial e Concorrente
     para a diciplina de Programação Concorrente da UFRN (2024.1)
   </description>
+  <properties>
+    <java.version>21</java.version>
+  </properties>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>

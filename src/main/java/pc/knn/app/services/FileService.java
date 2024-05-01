@@ -17,6 +17,7 @@ import pc.knn.app.model.Record;
 import javax.imageio.ImageIO;
 
 public class FileService {
+    public static final int IMAGE_SIZE = 50;
     // This method will load and convert an image to a matrix of pixels
     public static int[] resizeImageAndConvertToGray (String path){
         // Load phase
@@ -30,8 +31,8 @@ public class FileService {
         }
 
         // Resize phase
-        BufferedImage resizedImage = new BufferedImage(50, 50, BufferedImage.TYPE_BYTE_GRAY);
-        resizedImage.getGraphics().drawImage(image, 0, 0, 50, 50, null);
+        BufferedImage resizedImage = new BufferedImage(IMAGE_SIZE, IMAGE_SIZE, BufferedImage.TYPE_BYTE_GRAY);
+        resizedImage.getGraphics().drawImage(image, 0, 0, IMAGE_SIZE, IMAGE_SIZE, null);
 
         // Convert image as a byte array
         byte[] imageBytes = ((DataBufferByte) resizedImage.getRaster().getDataBuffer()).getData();

@@ -1,5 +1,5 @@
 # Large files are not allowed to be pushed to the repository
-src/main/java/pc/knn/resources/datasets
+/datasets/
 
 /target/
 !.mvn/wrapper/maven-wrapper.jar

@@ -16,6 +16,10 @@ public class Knn {
     public final static String BIRDS_PATH = "C:\\Users\\ianco\\Documents\\datasets\\birds";
 
     public static void main( String[] args ){
+        serialRunner();
+    }
+
+    public static void serialRunner() {
         List<Record> records = null;
         try {
             records = FileService.preLoadRecords(CSV_PATH, "train");
